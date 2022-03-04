@@ -1,0 +1,8 @@
+version: '3.1'
+services:
+  postgres:
+    image: postgres
+    environment:
+      POSTGRES_PASSWORD: 112358
+    ports:
+      - 5431:5432
