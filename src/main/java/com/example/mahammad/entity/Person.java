@@ -20,5 +20,6 @@ public class Person {
 
     private String name;
 
+    @OneToMany(fetch = FetchType.EAGER, mappedBy = "person", cascade = {CascadeType.ALL})
     private List<Phone> phoneList;
 }
